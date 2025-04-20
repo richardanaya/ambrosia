@@ -52,9 +52,9 @@ Most people just need control over over the primary brand color, background, and
 
 ## Color
 
-Open Props UI uses 16 color css variables --color-1 through --color-16 based off the palette variables above. By default without hue rotation, you can think of these as light (1) to black(16). Chroma basically is saturation (whether your palette is greyed out or not).
+Open Props UI uses 16 color css variables --color-1 through --color-16 based off the palette variables above. By default without hue rotation, you can think of these as light (1) to black(16). Chroma basically is saturation (whether your palette is greyed out or not). Rotation gives some variance than straight luminosity.
 
-Check out this palette tool for advanced options!
+Check out this palette tool for advanced options or the [demo](https://richardanaya.github.io/ambrosia/demo.html)
 
 https://opv2-beta.netlify.app/color/
 
@@ -139,3 +139,15 @@ If you REALLY need to tweak every little detail, consider this. Otherwise, beyon
   }
 }
 ```
+
+
+# Common open props
+
+Since Ambrosia is based on open props, you have available to you a large number of props for things like spacing and size
+
+```css
+--size-1
+--size-4
+```
+
+Check out https://open-props.style/ for more information!
