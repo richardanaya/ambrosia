@@ -1,6 +1,6 @@
 # Ambrosia
 
-A super simple single file semantic HTML css based off Open Props UI. This project is really just an ultra easy way to utilize that project in HTMX applications.
+A super simple single file semantic HTML css based off [Open Props UI](https://open-props-ui.netlify.app/). This project is really just an ultra easy way to utilize that project in HTMX applications.
 
 * Simple theming
 * Light/dark mode support
