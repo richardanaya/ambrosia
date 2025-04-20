@@ -17,8 +17,6 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 
 # Theming
 
-# Simple theming
-
 Most people just need control over over the primary brand color, background, and border radius.
 
 ```css
