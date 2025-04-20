@@ -1,6 +1,6 @@
 # Ambrosia
 
-A super simple single file semantic HTML css based off [Open Props UI](https://open-props-ui.netlify.app/). This project is really just an ultra easy way to utilize that project in HTMX applications.
+A super simple single file semantic HTML that is a more simplistic distribution of [Open Props UI](https://open-props-ui.netlify.app/). This project is really just an ultra easy way to utilize it in HTMX applications.
 
 * Simple theming
 * Light/dark mode support
@@ -14,6 +14,8 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/richardanaya/ambrosia/ambrosia.css" />
 ```
+
+A list of all the components are at [Open Props UI Components](https://open-props-ui.netlify.app/components/actions/button.html) documentation.
 
 # Theming
 
@@ -140,9 +142,9 @@ If you REALLY need to tweak every little detail, consider this. Otherwise, beyon
 ```
 
 
-# Common open props
+# Common utility CSS variables
 
-Since Ambrosia is based on open props, you have available to you a large number of props for things like spacing and size
+Since Ambrosia is based on Open Props, you have available to you a large number of props for consistant sizing
 
 ```css
 --size-1
