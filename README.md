@@ -15,6 +15,8 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/richardanaya/ambrosia/ambrosia.css" />
 ```
 
+A list of all the components are [https://open-props-ui.netlify.app/components/actions/button.html](https://open-props-ui.netlify.app/components/actions/button.html)
+
 # Theming
 
 Most people just need control over over the primary brand color, background, and border radius.
