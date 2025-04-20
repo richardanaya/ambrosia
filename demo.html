@@ -36,13 +36,80 @@
         "
       >
         <h1>Ambrosia</h1>
-        <button
-          class="button tonal"
-          onclick="document.documentElement.classList.toggle('dark')"
-        >
-          Dark/Light
-        </button>
       </div>
+      <section>
+        <h2>Theme</h2>
+        <div style="display: flex; gap: 16px">
+          <div style="width: 250px">
+            <div id="hue-description">--palette-hue: 210;</div>
+            <div id="rotate-description">--palette-hue-rotate-by: 0;</div>
+            <div id="chroma-description">--palette-chroma: 0.4;</div>
+          </div>
+          <div>
+            <!-- lets create a slider 1-360 for hue-->
+            <div>
+              <label for="hue">Hue</label>
+              <input
+                type="range"
+                id="hue"
+                min="0"
+                max="360"
+                value="210"
+                oninput="document.documentElement.style.setProperty('--palette-hue', this.value);
+            document.getElementById('hue-description').innerText = '--palette-hue: ' + this.value + ';'"
+              />
+            </div>
+            <div>
+              <label for="hue-rotate">Hue Rotate</label>
+              <input
+                type="range"
+                id="hue-rotate"
+                min="-180"
+                max="180"
+                value="0"
+                oninput="document.documentElement.style.setProperty('--palette-hue-rotate-by', this.value);
+            document.getElementById('rotate-description').innerText = '--palette-hue-rotate-by: ' + this.value + ';'"
+              />
+            </div>
+            <div>
+              <label for="chroma">Chroma</label>
+              <input
+                type="range"
+                id="chroma"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.4"
+                oninput="document.documentElement.style.setProperty('--palette-chroma', this.value)
+            document.getElementById('chroma-description').innerText = '--palette-chroma: ' + this.value + ';'"
+              />
+            </div>
+            <!-- Reset button -->
+            <button
+              class="button tonal"
+              onclick="
+            document.documentElement.style.setProperty('--palette-hue', 210);
+            document.documentElement.style.setProperty('--palette-hue-rotate-by', 0);
+            document.documentElement.style.setProperty('--palette-chroma', 0.4);
+            document.getElementById('hue').value = 210;
+            document.getElementById('hue-description').innerText = '--palette-hue: 210;';
+            document.getElementById('hue-rotate').value = 0;
+            document.getElementById('rotate-description').innerText = '--palette-hue-rotate-by: 0;';
+            document.getElementById('chroma').value = 0.4;
+            document.getElementById('chroma-description').innerText = '--palette-chroma: 0.4;'
+          "
+            >
+              Reset
+            </button>
+            <button
+              class="button tonal"
+              onclick="document.documentElement.classList.toggle('dark')"
+            >
+              Dark/Light
+            </button>
+          </div>
+        </div>
+      </section>
       <button
         class="VPSwitch VPSwitchAppearance"
         type="button"
