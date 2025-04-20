@@ -2,10 +2,57 @@
   <head>
     <link rel="stylesheet" href="ambrosia.css" />
     <link rel="stylesheet" href="theme.css" />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background);
+        color: var(--on-background);
+      }
+      main {
+        max-width: 800px;
+        margin: auto;
+        padding: 16px;
+      }
+
+      main > section {
+        margin-bottom: 32px;
+      }
+
+      .card {
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <h1>Ambrosia UI Components</h1>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 36px;
+        "
+      >
+        <h1>Ambrosia</h1>
+        <button
+          class="button tonal"
+          onclick="document.documentElement.classList.toggle('dark')"
+        >
+          Dark/Light
+        </button>
+      </div>
+      <button
+        class="VPSwitch VPSwitchAppearance"
+        type="button"
+        role="switch"
+        title="Switch to dark theme"
+        aria-checked="false"
+        data-v-708d128f=""
+        data-v-cdd49b3b=""
+        data-v-abeb953a=""
+      ></button>
       <section>
         <h2>Buttons</h2>
         <button class="button">Default</button>
@@ -43,7 +90,14 @@
 
         <label class="field filled">
           <select>
-            <!--  -->
+            <button>
+              <selectedcontent>foo</selectedcontent>
+            </button>
+            <div class="list">
+              <option>Outlined (default)</option>
+              <option>Option Two</option>
+              <option>Option Three</option>
+            </div>
           </select>
         </label>
       </section>
@@ -58,6 +112,54 @@
           <span class="label">Label</span>
           <input type="text" placeholder="Placeholder" />
         </label>
+      </section>
+      <section>
+        <h2>Cards</h2>
+        <div class="card text">
+          <div class="content">Text</div>
+        </div>
+
+        <div class="card outlined">
+          <div class="content">Outlined</div>
+        </div>
+
+        <div class="card tonal">
+          <div class="content">Tonal</div>
+        </div>
+
+        <div class="card elevated">
+          <div class="content">Elevated</div>
+        </div>
+        <div class="card outlined">
+          <hgroup>
+            <p>Overline</p>
+            <h2 class="h3">Headline</h2>
+            <p>Subhead</p>
+          </hgroup>
+          <div class="content">
+            Explain more about the topic shown in the headline and subhead
+            through supporting text.
+          </div>
+          <div class="actions">
+            <button class="button">Share</button>
+            <button class="button">Learn more</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Typography</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <p class="large">Body Large</p>
+        <p>Body</p>
+        <p class="overline">Overline</p>
+        <caption>
+          Caption
+        </caption>
       </section>
     </main>
   </body>

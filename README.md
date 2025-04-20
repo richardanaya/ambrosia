@@ -14,3 +14,111 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/richardanaya/ambrosia/ambrosia.css" />
 ```
+
+# Theming
+
+# Simple theming
+
+Most people just need control over over the primary brand color and border radius.
+
+```css
+@layer theme {
+  html {
+    color-scheme: var(--color-scheme);
+  }
+
+  .light {
+    --color-scheme: light;
+  }
+  .dark {
+    --color-scheme: dark;
+  }
+
+  :where(html) {
+    color-scheme: light dark;
+
+    --palette-hue: var(--oklch-green);
+    --palette-hue-rotate-by: 0;
+    --palette-chroma: 0.4;
+
+    --border-radius: var(--size-1);
+    --field-border-radius: var(--size-1);
+    --button-border-radius: var(--radius-round);
+  }
+}
+
+```
+
+## Advanced Theming
+
+If you REALLY need to tweak every little detail, consider this. Otherwise, beyond this point you should look more deeply into Open Props UI and Open Props itself.
+
+```
+@layer theme {
+  html {
+    color-scheme: var(--color-scheme);
+  }
+
+  .light {
+    --color-scheme: light;
+  }
+  .dark {
+    --color-scheme: dark;
+  }
+
+  :where(html) {
+    color-scheme: light dark;
+
+    --palette-hue: var(--oklch-green);
+    --palette-hue-rotate-by: 0;
+    --palette-chroma: 0.4;
+
+    /* Borders */
+    --border-radius: var(--size-1);
+
+    /* Input Field */
+    --field-border-radius: var(--size-1);
+
+    /* Button */
+    --button-border-radius: var(--radius-round);
+
+    /* Advanced */
+
+    /* Typography */
+    --font-size-h1: var(--font-size-fluid-3, 3.5rem);
+    --font-size-h2: var(--font-size-fluid-2, 2rem);
+    --font-size-h3: var(--font-size-fluid-1, 1.5rem);
+    --font-size-h4: var(--font-size-3, 1.25rem);
+    --font-size-h5: var(--font-size-2, 1.1rem);
+    --font-size-h6: var(--font-size-fluid-0, 1rem);
+    --font-size-lg: var(--font-size-3, 1.25rem);
+    --font-size-md: var(--font-size-fluid-0, 1rem);
+    --font-size-sm: 0.875rem;
+    --font-size-xs: var(--font-size-0, 0.75rem);
+
+
+    /* Borders */
+    --border-width: 1px;
+    --field-border-color: var(--border-color);
+    --border-color: light-dark(var(--gray-4), var(--gray-12));
+
+    /* Primary */
+    --primary: var(--color-8);
+    --primary-light: oklch(from var(--primary) calc(l * 1.25) c h);
+    --primary-dark: oklch(from var(--primary) calc(l * 0.75) c h);
+    --primary-contrast: var(--gray-1);
+
+    /* Text */
+    --text-color-1: light-dark(var(--gray-15), var(--gray-1));
+    --text-color-1-contrast: light-dark(var(--gray-2), var(--gray-15));
+    --text-color-2: light-dark(var(--gray-13), var(--gray-4));
+    --text-color-2-contrast: light-dark(var(--gray-4), var(--gray-13));
+
+    /* Surface */
+    --surface-default: light-dark(var(--gray-1), var(--gray-13));
+    --surface-filled: light-dark(var(--gray-3), var(--gray-15));
+    --surface-tonal: light-dark(var(--gray-3), var(--gray-12));
+    --surface-elevated: light-dark(var(--gray-1), var(--gray-12));
+  }
+}
+```
