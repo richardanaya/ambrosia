@@ -15,7 +15,7 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/richardanaya/ambrosia/ambrosia.css" />
 ```
 
-A list of all the components are [https://open-props-ui.netlify.app/components/actions/button.html](https://open-props-ui.netlify.app/components/actions/button.html)
+A list of all the components are at [Open Props UI Components](https://open-props-ui.netlify.app/components/actions/button.html) documentation.
 
 # Theming
 
