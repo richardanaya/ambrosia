@@ -139,9 +139,9 @@ If you REALLY need to tweak every little detail, consider this. Otherwise, beyon
 ```
 
 
-# Common open props
+# Common utility CSS variables
 
-Since Ambrosia is based on open props, you have available to you a large number of props for things like spacing and size
+Since Ambrosia is based on Open Props, you have available to you a large number of props for consistant sizing
 
 ```css
 --size-1
