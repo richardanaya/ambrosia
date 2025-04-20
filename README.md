@@ -37,9 +37,10 @@ Most people just need control over over the primary brand color, background, and
   :where(html) {
     color-scheme: light dark;
 
-    --palette-hue: var(--oklch-green);
-    --palette-hue-rotate-by: 0;
-    --palette-chroma: 0.4;
+    --palette-hue: var(--oklch-green); /* Value: 1 - 360 of hugh colors. See color details below. */ 
+    --palette-hue-rotate-by: 0; /* Should almost always be 0. See color details below. */
+    --palette-chroma: 0.4; /* Saturation of colors (i.e. 0 = greyed out, 1 = full color. */
+
     --background: light-dark(var(--gray-1), var(--gray-12));
 
     --border-radius: var(--size-1);
@@ -48,6 +49,21 @@ Most people just need control over over the primary brand color, background, and
   }
 }
 ```
+
+## Color
+
+Open Props UI uses 16 color css variables --color-1 through --color-16 based off the palette variables above. By default without hue rotation, you can think of these as light (1) to black(16). Chroma basically is saturation (whether your palette is greyed out or not).
+
+Check out this palette tool for advanced options!
+
+https://opv2-beta.netlify.app/color/
+
+Open props also has general color variables you can use:
+
+* `--gray-1` - light grey
+* `--red-10` - dark red
+
+See more https://github.com/argyleink/open-props/blob/main/src/props.colors.css
 
 ## Advanced Theming
 
