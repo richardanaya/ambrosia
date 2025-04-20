@@ -19,7 +19,7 @@ Check out the [demo](https://richardanaya.github.io/ambrosia/demo.html) of a wid
 
 # Simple theming
 
-Most people just need control over over the primary brand color and border radius.
+Most people just need control over over the primary brand color, background, and border radius.
 
 ```css
 @layer theme {
@@ -40,20 +40,20 @@ Most people just need control over over the primary brand color and border radiu
     --palette-hue: var(--oklch-green);
     --palette-hue-rotate-by: 0;
     --palette-chroma: 0.4;
+    --background: light-dark(var(--gray-1), var(--gray-12));
 
     --border-radius: var(--size-1);
     --field-border-radius: var(--size-1);
     --button-border-radius: var(--radius-round);
   }
 }
-
 ```
 
 ## Advanced Theming
 
 If you REALLY need to tweak every little detail, consider this. Otherwise, beyond this point you should look more deeply into Open Props UI and Open Props itself.
 
-```
+```css
 @layer theme {
   html {
     color-scheme: var(--color-scheme);
@@ -72,6 +72,7 @@ If you REALLY need to tweak every little detail, consider this. Otherwise, beyon
     --palette-hue: var(--oklch-green);
     --palette-hue-rotate-by: 0;
     --palette-chroma: 0.4;
+    --background: light-dark(var(--gray-1), var(--gray-12));
 
     /* Borders */
     --border-radius: var(--size-1);

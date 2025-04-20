@@ -16,14 +16,10 @@
     --palette-hue: var(--oklch-green);
     --palette-hue-rotate-by: 0;
     --palette-chroma: 0.4;
+    --background: light-dark(var(--gray-1), var(--gray-12));
 
-    /* Borders */
     --border-radius: var(--size-1);
-
-    /* Input Field */
     --field-border-radius: var(--size-1);
-
-    /* Button */
     --button-border-radius: var(--radius-round);
   }
 }
