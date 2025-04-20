@@ -37,7 +37,7 @@ Most people just need control over over the primary brand color, background, and
   :where(html) {
     color-scheme: light dark;
 
-    --palette-hue: var(--oklch-green); /* Value: 1 - 360 of hugh colors. See color details below. */ 
+    --palette-hue: 140; /* Value: 0 - 360 of hugh colors. See color details below. */ 
     --palette-hue-rotate-by: 0; /* Should almost always be 0. See color details below. */
     --palette-chroma: 0.4; /* Saturation of colors (i.e. 0 = greyed out, 1 = full color. */
 
