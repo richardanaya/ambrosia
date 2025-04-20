@@ -44,6 +44,10 @@ Most people just need control over over the primary brand color, background, and
     --border-radius: var(--size-1);
     --field-border-radius: var(--size-1);
     --button-border-radius: var(--radius-round);
+
+    a {
+      color: var(--text-color-2);
+    }
   }
 }
 ```
@@ -55,13 +59,6 @@ Open Props UI uses 16 color css variables --color-1 through --color-16 based off
 Check out this palette tool for advanced options or the [demo](https://richardanaya.github.io/ambrosia/demo.html)
 
 https://opv2-beta.netlify.app/color/
-
-Open props also has general color variables you can use:
-
-* `--gray-1` - light grey
-* `--red-10` - dark red
-
-See more https://github.com/argyleink/open-props/blob/main/src/props.colors.css
 
 ## Advanced Theming
 
@@ -96,6 +93,10 @@ If you REALLY need to tweak every little detail, consider this. Otherwise, beyon
 
     /* Button */
     --button-border-radius: var(--radius-round);
+
+    a {
+      color: var(--text-color-2);
+    }
 
     /* Advanced */
 

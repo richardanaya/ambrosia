@@ -21,5 +21,9 @@
     --border-radius: var(--size-1);
     --field-border-radius: var(--size-1);
     --button-border-radius: var(--radius-round);
+
+    a {
+      color: var(--text-color-2);
+    }
   }
 }
